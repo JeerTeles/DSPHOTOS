@@ -9,53 +9,54 @@
     font-family: "inter";
 }
 
-.container {
+/*.container {
     width: 100%;
-    background-color: red;
-}
+}*/
 
 nav {
-    height: 80px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8%;
-    position: relative;
-    background: #021b29;
+    padding: 0%;
+    position: fixed;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.992);
 }
 
 nav .logo {
-    background-color: #f2a70c;
-    padding: 12px 16px;
-    border-radius: 30px;
+    padding: 5px;
+    margin: 3px;
 }
 
-nav .logo i {
-    margin-right: 8px;
-}
-
-nav h2 {
-    font-size: 1rem;
+nav img {
+    width: 10rem;
+    height: 60px;
 }
 
 nav .contact-link {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     color: #f2a70c;
+    padding: 20px;
 }
 
 nav .contact-link i {
-    font-size: 10px;
+    font-size: 5px;
 }
 
 nav .contact-link a {
-    color: #f2a70c;
+    color: #fff;
 }
 
 nav .menu {
+    display: none;
     background-color: #f2a70c;
-    padding: 18px;
+    padding: 8px;
+    margin: 8px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -67,18 +68,19 @@ nav .menu h4 {
 nav ul {
     height: 0;
     position: absolute;
-    top: 100%;
-    right: 8%;
-    width: 10%;
+    top: 65%;
+    right: 0%;
+    width: 100%;
     border-radius: 10px;
     transition: .6s;
     background-color: #f2a70c;
-    padding: 10px 20px;
+    padding: 0 8px;
+    margin: 8px;
     opacity: 0;
 }
 
 nav ul li {
-    padding: 8px 5px;
+    padding:  5px;
 }
 
 nav ul li a {
@@ -96,14 +98,14 @@ nav .show {
 }
 
 /* Main section */
-.hero-wrapper {
+/*.hero-wrapper {
     padding: 5% 8%;
     background: rgba(0, 0, 0, 0.992);
     background-image: url('/src/img/logo-perfil.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-}
+}*/
 
 .hero {
     display: flex;
@@ -161,6 +163,7 @@ button:hover {
 
 /* About section */
 .about-wrapper {
+    margin: 40px 0px 0px;
     padding: 5% 8%;
     background: #021b29;
 }
@@ -431,6 +434,43 @@ form button {
 }
 
 /* Contac page ends */ 
+
+/* footer */
+.footer-wrapper {
+    padding: 2% 8%;
+    background-color: #f2a70c;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+}
+
+.social .icon {
+   height: 48px;
+   width: 48px;
+    border-radius: 50%;
+    background-color: #021b29;
+    position: relative;
+}
+
+.social .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f2a70c;
+}
+
+.branding {
+    display: flex;
+}
 
 @media screen and (max-width: 499px) {
     nav ul {
