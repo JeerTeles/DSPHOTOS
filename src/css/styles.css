@@ -14,7 +14,7 @@
 }*/
 
 nav {
-    height: 60px;
+    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ nav .logo {
 
 nav img {
     width: 10rem;
-    height: 60px;
+    height: 80px;
 }
 
 nav .contact-link {
@@ -49,6 +49,7 @@ nav .contact-link i {
 }
 
 nav .contact-link a {
+    font-size: 25px;
     color: #fff;
 }
 
