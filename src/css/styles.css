@@ -353,20 +353,19 @@ button:hover {
 }
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    gap: 25px;
     color: #fff;
 }
 
 .contact .content {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
 }
 
 .contact .content img {
-    height: 100px;
+    height: 300px;
     border: 2px solid #f2a70c;
     border-radius: 50%;
     margin-bottom: 20px;
