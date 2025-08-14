@@ -9,8 +9,9 @@
     font-family: "inter";
 }
 
-/*.container {
-    width: 100%;
+/*html {
+    position: absolute;
+    background: #021b29;
 }*/
 
 nav {
@@ -472,7 +473,7 @@ form button {
     display: flex;
 }
 
-@media screen and (max-width: 499px) {
+/*@media screen and (max-width: 499px) {
     nav ul {
         width: 25%;
     }
@@ -504,7 +505,7 @@ form button {
 
     .hero .hero-image {
         width: 75%;
-    }
+    }   
 
     .about .about-images {
         flex-direction: column;
@@ -599,5 +600,133 @@ form button {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 25px;
+    }
+}*/
+
+
+
+/* ========================================================== */
+/* ESTILOS RESPONSIVOS - DA TELA MAIOR PARA A MENOR           */
+/* ========================================================== */
+
+/* Para telas até 1100px de largura (Laptops menores) */
+@media screen and (max-width: 1100px) {
+    /* Ajusta o tamanho da fonte dos títulos */
+    .hero .content h1 {
+        font-size: 3.5rem;
+    }
+    .about .about-content h1 {
+        font-size: 2.8rem;
+    }
+
+    /* O grid de cards passa a ter 2 colunas */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        gap: 25px;
+    }
 }
+
+/* Para telas até 900px de largura (Tablets em modo paisagem) */
+@media screen and (max-width: 900px) {
+    /* Oculta os links de navegação e prepara para o menu hamburger */
+    nav .contact-link {
+        display: none;
+    }
+    nav .menu {
+        display: block; /* Garante que o menu hamburger apareça */
+    }
+
+    /* Empilha a seção hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero .content,
+    .hero .hero-image {
+        width: 90%; /* Usa porcentagem para ser mais flexível */
+        margin: 25px auto;
+    }
+
+    /* Empilha a seção 'about' */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-images,
+    .about .about-content {
+        width: 100%;
+    }
+    
+    .about .about-content {
+        margin-top: 40px;
+    }
+
+    /* Reseta o posicionamento das imagens na seção 'about' */
+    .about .about-images {
+        display: flex;
+        flex-direction: column; /* Imagens uma sobre a outra */
+        gap: 20px;
+        align-items: center;
+    }
+    .about .about-images .about-img1,
+    .about .about-images .about-img2 {
+        position: static; /* Remove o 'absolute' para que fiquem no fluxo normal */
+        transform: rotate(0);
+        width: 90%; /* Imagens ocupam 90% do container */
+        max-width: 450px; /* Limite para não ficarem gigantes */
+        height: auto; /* ALTURA AUTOMÁTICA para não distorcer a imagem */
+    }
+
+    /* Empilha a seção de contato */
+    .contact {
+       flex-direction: column; 
+    }
+    .contact .contactform {
+       width: 100%;
+    }
+}
+
+/* Para telas até 768px de largura (Tablets em modo retrato) */
+@media screen and (max-width: 768px) {
+    /* Os cards agora ficam em uma única coluna */
+    .cards {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+
+    .card {
+        /* Remove a largura fixa para que o card se ajuste à coluna do grid */
+        width: 100%; 
+        height: auto; /* Altura se ajusta ao conteúdo */
+        max-width: 400px; /* Um limite máximo opcional */
+        margin: 0 auto; /* Centraliza o card na coluna */
+    }
+}
+
+/* Para telas até 499px de largura (Celulares) */
+@media screen and (max-width: 499px) {
+    /* Ajusta o tamanho da fonte para telas bem pequenas */
+    h1 {
+        font-size: 2.5rem;
+    }
+    .about .about-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Ajusta o logo para não ocupar tanto espaço */
+    nav .logo {
+        width: 150px;
+    }
+
+    .contact .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card img {
+        width: 90vw;
+    }
+
 }
