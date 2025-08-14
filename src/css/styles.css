@@ -299,7 +299,7 @@ button:hover {
 }
 
 .cards .card {
-    width: 420px;
+    width: 100%;
     height: 320px;
     position: relative;
 }
@@ -714,6 +714,8 @@ form button {
     }
 
     /* Ajusta o logo para não ocupar tanto espaço */
+   
+    
     nav .logo {
         width: 150px;
     }
