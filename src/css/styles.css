@@ -709,8 +709,20 @@ form button {
     h1 {
         font-size: 2.5rem;
     }
+
+    .about .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about .about-content h1 {
         font-size: 2rem;
+    }
+
+     .about .about-content button {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
     }
 
     /* Ajusta o logo para não ocupar tanto espaço */
