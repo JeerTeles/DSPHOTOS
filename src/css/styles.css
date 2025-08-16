@@ -468,8 +468,8 @@ form button {
 }
 
 .social .icon {
-   height: 48px;
-   width: 48px;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
     background-color: #021b29;
     position: relative;
@@ -481,6 +481,20 @@ form button {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #f2a70c;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon i {
+  font-size: 1.8rem;
+
+}
+
+.icon:hover #what {
+  color: #25D366;
+}
+
+.icon:hover #instagram {
+  color: #E4405F;
 }
 
 .branding {
