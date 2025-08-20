@@ -9,13 +9,8 @@
     font-family: "inter";
 }
 
-/*html {
-    position: absolute;
-    background: #021b29;
-}*/
-
 nav {
-    height: 80px;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -495,6 +490,10 @@ form button {
 
 .icon:hover #instagram {
   color: #E4405F;
+}
+
+#media-dev {
+    color: #000;
 }
 
 .branding {
