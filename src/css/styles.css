@@ -183,6 +183,7 @@ button:hover {
     color: #fff;
     min-height: 100vh;
     position: relative;
+    margin: 2rem 0;
 }
 
 .about .about-images {
@@ -499,6 +500,78 @@ form button {
     display: flex;
 }
 
+/* page promo */
+/* Seção Principal da Promoção */
+.promo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 50px;
+    gap: 60px; /* Espaço entre as colunas */
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flyer-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    transform: rotate(-3deg); /* Efeito de rotação */
+    transition: transform 0.3s ease;
+}
+
+.flyer-image:hover {
+    transform: rotate(0deg) scale(1.05); /* Efeito ao passar o mouse */
+}
+
+.text-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text-column h2 {
+    font-size: 3.5rem; /* Tamanho grande para o título */
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text-column .highlight {
+    color: #f5b33d; /* Cor amarela de destaque */
+}
+
+.text-column p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f5b33d;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Borda bem arredondada como no exemplo */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #0f2027;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 /*@media screen and (max-width: 499px) {
     nav ul {
         width: 25%;
@@ -665,6 +738,7 @@ form button {
 
     nav ul {
         display: flex;
+        font-size: 20px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
