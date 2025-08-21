@@ -504,10 +504,12 @@ form button {
 /* Seção Principal da Promoção */
 .promo-section {
     display: flex;
+    color: #fff;
     align-items: center;
     justify-content: center;
     padding: 150px 50px;
     gap: 60px; /* Espaço entre as colunas */
+    background:#021b29;
 }
 
 .image-column {
