@@ -9,6 +9,24 @@
     font-family: "inter";
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #021b29;
+}
+
+/* Transforma o .container no layout flexível */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Faz o conteúdo principal (main) crescer e ocupar o espaço vago */
+main {
+  flex: 1;
+}
+
 nav {
     height: 100px;
     width: 100%;
@@ -449,6 +467,7 @@ form button {
 .footer-wrapper {
     padding: 2% 8%;
     background-color: #f2a70c;
+    margin-top: auto;
 }
 
 .footer {
