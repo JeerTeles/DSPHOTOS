@@ -815,6 +815,12 @@ form button {
 
 /* Para telas até 499px de largura (Celulares) */
 @media screen and (max-width: 499px) {
+
+    .promo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /* Ajusta o tamanho da fonte para telas bem pequenas */
     h1 {
         font-size: 2.5rem;
