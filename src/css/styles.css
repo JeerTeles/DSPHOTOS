@@ -117,16 +117,6 @@ nav .show {
     height: 200px;
 }
 
-/* Main section */
-/*.hero-wrapper {
-    padding: 5% 8%;
-    background: rgba(0, 0, 0, 0.992);
-    background-image: url('/src/img/logo-perfil.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-}*/
-
 .hero {
     display: flex;
     justify-content: space-between;
@@ -244,15 +234,6 @@ button:hover {
     font-size: 1.8rem;
     margin-bottom: 2%;
 }
-
-/*@keyframes updown {
-    0% {
-        transform: rotate(1deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}*/
 
 /* About section ends */
 
@@ -593,145 +574,12 @@ form button {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/*@media screen and (max-width: 499px) {
-    nav ul {
-        width: 25%;
-    }
-    nav .menu {
-        width: 120px;
-    }
-    nav .logo {
-        width: 170px;
-    }
-    nav .contact-link {
-        display: none;
-    }
-
-    .hero-wrapper {
-        background: black;
-    }
-
-    .about .about-images .about-img1,
-    .about .about-images .about-img2 {
-       height: 340px;
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    nav ul {
-        width: 16%;
-    }
-
-    .hero .hero-image {
-        width: 75%;
-    }   
-
-    .about .about-images {
-        flex-direction: column;
-    }
-
-    .about .about-images .about-img1,
-    .about .about-images .about-img2 {
-        height: 480px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    nav ul{
-        width: 14%;
-    }
-
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero .content {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .hero .hero-image {
-        width: 75%;
-    }
-
-    .about {
-        flex-direction: column;
-    }
-
-    .about .about-images .about-img1,
-    .about .about-images .about-img2 {
-        position: relative !important;
-        transform: rotate(0);
-    }
-
-    .about .about-images {
-        display: flex;
-        gap: 12px;
-        padding: 0 !important;
-        width: 100%;
-    }
-
-    .about .about-content {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .cards .card {
-        width: 380px;
-        height: 320px;
-    }
-
-    .contact {
-       flex-direction: column; 
-    }
-
-    .contact .contactform {
-        width: 100%;
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-}
-
-
-@media screen and (max-width: 1100px) {
-    .hero .content h1 {
-        font-size: 3.5rem;
-    }
-
-    .about .about-images .about-img1,
-    .about .about-images .about-img2 {
-        height: 250px;
-    }
-
-    .about .about-images .about-img2 {
-        top: 48%;
-    }
-
-    .about .about-content h1 {
-        font-size: 2.8rem;
-    }
-
-    .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 25px;
-    }
-}*/
-
-
 
 /* ========================================================== */
 /* ESTILOS RESPONSIVOS - DA TELA MAIOR PARA A MENOR           */
 /* ========================================================== */
 
-/* Para telas até 1100px de largura (Laptops menores) */
 @media screen and (max-width: 1100px) {
-    /* Ajusta o tamanho da fonte dos títulos */
     .hero .content h1 {
         font-size: 3.5rem;
     }
@@ -747,14 +595,12 @@ form button {
     }
 }
 
-/* Para telas até 900px de largura (Tablets em modo paisagem) */
 @media screen and (max-width: 900px) {
-    /* Oculta os links de navegação e prepara para o menu hamburger */
     nav .contact-link {
         display: none;
     }
     nav .menu {
-        display: block; /* Garante que o menu hamburger apareça */
+        display: block; 
     }
 
     nav ul {
@@ -773,11 +619,10 @@ form button {
     }
     .hero .content,
     .hero .hero-image {
-        width: 90%; /* Usa porcentagem para ser mais flexível */
+        width: 90%; 
         margin: 25px auto;
     }
 
-    /* Empilha a seção 'about' */
     .about {
         flex-direction: column;
         text-align: center;
@@ -794,7 +639,7 @@ form button {
     /* Reseta o posicionamento das imagens na seção 'about' */
     .about .about-images {
         display: flex;
-        flex-direction: column; /* Imagens uma sobre a outra */
+        flex-direction: column; 
         gap: 20px;
         align-items: center;
     }
@@ -802,12 +647,11 @@ form button {
     .about .about-images .about-img2 {
         position: static; /* Remove o 'absolute' para que fiquem no fluxo normal */
         transform: rotate(0);
-        width: 90%; /* Imagens ocupam 90% do container */
-        max-width: 450px; /* Limite para não ficarem gigantes */
-        height: auto; /* ALTURA AUTOMÁTICA para não distorcer a imagem */
+        width: 90%; 
+        max-width: 450px; 
+        height: auto;
     }
 
-    /* Empilha a seção de contato */
     .contact {
        flex-direction: column; 
     }
@@ -816,23 +660,19 @@ form button {
     }
 }
 
-/* Para telas até 768px de largura (Tablets em modo retrato) */
 @media screen and (max-width: 768px) {
-    /* Os cards agora ficam em uma única coluna */
     .cards {
-        grid-template-columns: 1fr; /* 1 coluna */
+        grid-template-columns: 1fr; 
     }
 
     .card {
-        /* Remove a largura fixa para que o card se ajuste à coluna do grid */
         width: 100%; 
-        height: auto; /* Altura se ajusta ao conteúdo */
-        max-width: 400px; /* Um limite máximo opcional */
-        margin: 0 auto; /* Centraliza o card na coluna */
+        height: auto; 
+        max-width: 400px;
+        margin: 0 auto; 
     }
 }
 
-/* Para telas até 499px de largura (Celulares) */
 @media screen and (max-width: 499px) {
 
     .promo-section {
@@ -840,7 +680,7 @@ form button {
         flex-direction: column;
         align-items: center;
     }
-    /* Ajusta o tamanho da fonte para telas bem pequenas */
+  
     h1 {
         font-size: 2.5rem;
     }
@@ -867,9 +707,6 @@ form button {
     .about .about-content a {
         color: #000;
     }
-
-    /* Ajusta o logo para não ocupar tanto espaço */
-   
     
     nav .logo {
         width: 150px;
